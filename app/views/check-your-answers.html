@@ -1,0 +1,261 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Check your answers
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Check your answers before sending your application
+      </h1>
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="govuk-heading-m">
+        Your details
+      </h2>
+
+      <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+      <!--   * `app-check-your-answers--short` for short questions -->
+      <!--   * `app-check-your-answers__questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+      <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Name
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Sarah Philips
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> name</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Date of birth
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            5 January 1978
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> date of birth</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Marital status
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Single
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> home address</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Any children
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            No
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Any pets
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            No
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> contact details</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="govuk-heading-m">
+        Financial assets
+      </h2>
+
+      <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Banks
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Natwest
+            <br>
+            Santander
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Pension
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Aviva
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> licence type</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-m">
+        Residuary estate
+      </h2>
+
+      <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Beneficiaries
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Joe Bloggs
+            <br>
+            Jane Bloggs
+            <br>
+            James Bloggs
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            How the estate is split
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Joe Bloggs inherits 58%
+            <br>
+            <br>
+            Jane Bloggs inherits 20%
+            <br>
+            <br>
+            James Bloggs inherits 20%
+            <br>
+            <br>
+            Cancer research UK inherits 2%
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+      <h2 class="govuk-heading-m">
+        Executors
+      </h2>
+
+      <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Your executors
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Lucy Smith
+            <br>
+            Joe Bloggs
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+
+
+      </dl>
+
+      <h2 class="govuk-heading-m">
+        Gifts
+      </h2>
+
+      <dl class="app-check-your-answers app-check-your-answers--short">
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Possessions
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            White Fender Stratocaster guitar for <br>James Taylor
+            <br>
+            <br>
+            Diamond engagement ring for <br>Jessica Phillips
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Money
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            £700.00 for <br>James Taylor
+            <br>
+            <br>
+            £5,000.00 for <br>Jessica Phillips
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> previous application number</span>
+            </a>
+          </dd>
+        </div>
+
+
+      </dl>
+
+
+      <h2 class="govuk-heading-m">Now send your application</h2>
+
+      <p>
+        By submitting this notification you are confirming that, to the best of your knowledge, the details you are providing are correct.
+      </p>
+
+      <a class="govuk-button" href="confirmation" role="button">
+        Accept and send application
+      </a>
+
+    </div>
+  </div>
+{% endblock %}

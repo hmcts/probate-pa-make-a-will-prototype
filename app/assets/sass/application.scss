@@ -8,6 +8,10 @@ $govuk-global-styles: true;
 @import "patterns/check-your-answers";
 @import "patterns/task-list";
 @import "patterns/related-items";
+@import 'patterns/currency-input';
+
+// Import HMCTS Frontend
+@import "node_modules/@hmcts/frontend/all";
 
 // Components that aren't in Frontend
 @import "components/cookie-banner";

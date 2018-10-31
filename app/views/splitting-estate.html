@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/estate-inherit">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/executor-info" method="post">
+
+      <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          How would you like to split your estate?
+        </h1>
+      </legend>
+
+      <br>
+
+
+
+      <div class="govuk-currency-input">
+          <label class="govuk-label" for="contact-by-email">
+          Beneficiary 1
+        </label>
+          <div class="govuk-currency-input__inner">
+            <span class="govuk-currency-input__inner__unit govuk-body">%</span>
+            <input class="govuk-currency-input__inner__input govuk-input govuk-input--width-3" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="number" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+          </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="govuk-currency-input">
+            <label class="govuk-label" for="contact-by-email">
+            Beneficiary 2
+          </label>
+            <div class="govuk-currency-input__inner">
+              <span class="govuk-currency-input__inner__unit govuk-body">%</span>
+              <input class="govuk-currency-input__inner__input govuk-input govuk-input--width-3" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="number" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+            </div>
+          </div>
+          <br>
+          <br>
+
+          <div class="govuk-currency-input">
+              <label class="govuk-label " for="contact-by-email">
+              Total
+            </label>
+              <div class="govuk-currency-input__inner">
+                <span class="govuk-currency-input__inner__unit govuk-body">%</span>
+                <input class="govuk-currency-input__inner__input govuk-input govuk-input--width-3" aria-label="Enter amount in pounds" name="tickets-cost" data-non-numeric type="number" id="tickets-cost" pattern="[0-9]\d*(\.\d+)?" {{ checked('tickets-cost','yes') }}>
+              </div>
+            </div>
+
+            <br>
+            <br>
+
+
+
+
+
+    <div class="form-group">
+      <input class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" type="submit" value="Continue">
+    </div>
+
+    </form>
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block page_scripts %}
+
+<script>
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/splitting-estate">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          Choosing your executors
+        </h1>
+      </legend>
+      <p> You can choose between one and four executors. We recommend choosing more than one, especially if any beneficiaries of your will are currently under 18.</p>
+      <br>
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h1 class="govuk-fieldset__heading">
+          Choosing friends & family
+        </h1>
+        <br>
+          <p> Being an executor can be stressful. There are a few important things to consider if you’re choosing friends or family.</p>
+      </legend>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>that they’re over 18</li>
+          <li>that you trust them</li>
+          <li>they’re good with finances and paperwork</li>
+          <li>you’re happy to tell them you’ve chosen them</li>
+        </ul>
+
+        <div class="govuk-inset-text">
+          You can also choose a professional executor to help with your estate after you die. 
+        </div>
+
+
+        <a href="/executors" role="button" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8">Continue</a>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/children">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/financial-asset" method="post">
+
+      <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          Do you have any pets?
+        </h1>
+      </legend>
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="pets-yes" name="pets" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="pets-yes">
+            Yes
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="pets-no" name="pets" type="radio" value="no">
+          <label class="govuk-label govuk-radios__label" for="pets-no">
+            No
+          </label>
+        </div>
+        <!-- <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+            Wales
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+            Northern Ireland
+          </label>
+        </div>
+      </div> -->
+    </fieldset>
+  </div>
+
+        <div class="form-group">
+          <input class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" type="submit" value="Continue">
+        </div>
+
+        </form>
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/gifts">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="hmcts-add-another">
+
+<h1 class="govuk-heading-xl hmcts-add-another__heading" tabindex="-1">Leaving possessions as a gift</h1>
+
+<p>You can leave anything you own as a gift, just make sure it’s specific. Telling people they can have 'everything' or 'all my possessions' may cause issues with your will.</p>
+
+<form method="post">
+
+<fieldset class="govuk-fieldset hmcts-add-another__item">
+
+  <legend class="govuk-fieldset__legend hmcts-add-another__title  govuk-fieldset__legend--m">
+    Possession
+  </legend>
+
+  <div class="govuk-form-group">
+
+    <p>Describe in detail the gift you'd like to leave</p>
+
+
+    <label class="govuk-label" for="questions[0][subject]">
+      Description of gift
+    </label>
+    <input class="govuk-input" id="questions[0][subject]" name="questions[0][subject]" type="text" data-name="questions[%index%][subject]" data-id="questions[%index%][subject]">
+  </div>
+
+
+
+
+</fieldset>
+
+<div class="hmcts-button-action">
+
+  <button type="submit" class="govuk-button hmcts-button--secondary  hmcts-add-another__add-button  govuk-!-margin-bottom-4">
+    Add another possession
+  </button>
+
+</div>
+
+<div class="hmcts-button-action">
+
+  <a href="/check-your-answers" role="button" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8">Continue</a>
+
+</div>
+
+</form>
+
+</div>
+
+
+    </div>
+  </div>
+
+{% endblock %}

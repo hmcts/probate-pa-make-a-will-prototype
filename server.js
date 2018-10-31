@@ -340,6 +340,10 @@ app.use(function (req, res, next) {
   next(err)
 })
 
+// HMCTS Frontend images and fonts
+app.use('/assets', express.static(path.join(__dirname, '/node_modules/@hmcts/frontend/assets')));
+app.use('/node_modules/hmcts-frontend', express.static(path.join(__dirname, '/node_modules/@hmcts/frontend')))
+
 // Display error
 app.use(function (err, req, res, next) {
   console.error(err.message)

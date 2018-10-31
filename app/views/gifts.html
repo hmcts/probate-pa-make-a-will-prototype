@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/executors">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/possessions" method="post">
+
+        <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          Are there any gifts you'd like to leave?
+        </h1>
+      </legend>
+
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+            Possessions
+          </label>
+          <span id="nationality-1-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          You can leave anything you own as a gift
+        </span>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            Money
+          </label>
+          <span id="nationality-1-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          You can leave a specific amount of money to a person or charity. Gifts of money can only be left to one person or charity at a time
+        </span>
+        </div>
+
+    </fieldset>
+  </div>
+
+        <div class="form-group">
+          <input class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" type="submit" value="Continue">
+        </div>
+
+        </form>
+
+    </div>
+  </div>
+
+{% endblock %}

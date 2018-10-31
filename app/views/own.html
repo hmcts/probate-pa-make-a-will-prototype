@@ -1,0 +1,63 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/live">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/task-list" method="post">
+
+      <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          Is everything you own in the UK?
+        </h1>
+      </legend>
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="possessions-owned-1" name="possessions-owned" type="radio" value="yes">
+          <label class="govuk-label govuk-radios__label" for="possessions-owned-1">
+            Yes
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="possessions-owned-2" name="possessions-owned" type="radio" value="no">
+          <label class="govuk-label govuk-radios__label" for="possessions-owned-2">
+            No
+          </label>
+        </div>
+        <!-- <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+            Wales
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+            Northern Ireland
+          </label>
+        </div>
+      </div> -->
+    </fieldset>
+  </div>
+
+    <div class="form-group">
+      <input class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8" type="submit" value="Continue">
+    </div>
+
+    </form>
+
+    </div>
+  </div>
+
+{% endblock %}

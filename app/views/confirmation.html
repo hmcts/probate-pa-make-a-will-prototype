@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+<!-- Adds a class to increase vertical spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block pageTitle %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Application complete</h1>
+        <div class="govuk-panel__body">
+          Your reference number<br><strong>HDJ2123F</strong>
+        </div>
+      </div>
+
+      <p>
+        We have sent you a confirmation email.
+      </p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <h4 class="govuk-heading-s">1. We've sent your application to London Probate Registery Office. </h4>
+      <p>They will check your will to make sure everything is okay, or to ask for more information if there's an issue.</p>
+
+      <h4 class="govuk-heading-s">2. Print and sign </h4>
+      <p>Once your will is ready for you, you can go ahead and print and sign. You’ll need two witnesses there with you to also sign your will.</p>
+
+      <h4 class="govuk-heading-s">3. Store it safely </h4>
+      <p>You need to store your will somewhere safe and tell your executors where it is. <a href="#">You can store you will with the government</a></p>
+
+      <br>
+      <br>
+
+      <p><a href="#1">What did you think of this service?</a> (takes 30 seconds)</p>
+
+
+    </div>
+  </div>
+
+{% endblock %}

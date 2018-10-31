@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/financial-asset">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          Your estate
+        </h1>
+      </legend>
+      <p> Your estate is everything you own apart from any specific gifts you decide to leave to people later on.</p>
+      <br>
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+        <h1 class="govuk-fieldset__heading">
+          What it includes
+        </h1>
+      </legend>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>your bank accounts and ISAs</li>
+          <li>property (your house or flat)</li>
+          <li>stocks & Shares</li>
+          <li>your possessions</li>
+        </ul>
+
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h1 class="govuk-fieldset__heading">
+            What it doesn't include
+          </h1>
+        </legend>
+          <ul class="govuk-list govuk-list--bullet">
+            <li>most pension plans</li>
+            <li>most life insurance</li>
+            <li>specific gifts you choose to leave</li>
+            <li>property held as joint tenants</li>
+            <li>joint bank accounts</li>
+          </ul>
+
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h1 class="govuk-fieldset__heading">
+              Who can you leave it with?
+            </h1>
+          </legend>
+          <p>You can leave your estate to whoever you'd like. You can even include charities.</p>
+
+
+
+        <a href="/estate-inherit" role="button" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8">Continue</a>
+
+    </div>
+  </div>
+
+{% endblock %}

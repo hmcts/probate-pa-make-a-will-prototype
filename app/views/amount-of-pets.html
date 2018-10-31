@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/children">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="hmcts-add-another">
+
+<h1 class="govuk-heading-xl hmcts-add-another__heading" tabindex="-1">Your pets</h1>
+
+
+
+<form method="post">
+
+<fieldset class="govuk-fieldset hmcts-add-another__item">
+
+  <legend class="govuk-fieldset__legend hmcts-add-another__title  govuk-fieldset__legend--m">
+    Pet
+  </legend>
+
+  <div class="govuk-form-group">
+
+
+    <label class="govuk-label" for="questions[0][subject]">
+      Full name
+    </label>
+    <input class="govuk-input" id="questions[0][subject]" name="questions[0][subject]" type="text" data-name="questions[%index%][subject]" data-id="questions[%index%][subject]">
+  </div>
+
+
+
+
+</fieldset>
+
+<div class="hmcts-button-action">
+
+  <button type="submit" class="govuk-button hmcts-button--secondary  hmcts-add-another__add-button  govuk-!-margin-bottom-4">
+    Add another pet
+  </button>
+
+</div>
+
+<div class="hmcts-button-action">
+
+  <a href="/financial-asset" role="button" class="govuk-button govuk-!-margin-top-2 govuk-!-margin-bottom-8">Continue</a>
+
+</div>
+
+</form>
+
+</div>
+
+
+    </div>
+  </div>
+
+{% endblock %}
